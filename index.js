@@ -6,7 +6,7 @@ const path = require('path');
 const axios = require('axios'); // API 요청 보내는 라이브러리리
 
 const app = express();
-const port = 3001; //3001번 포트에서 백엔드 서버를 실행행
+const port =  process.env.PORT || 3001;; //3001번 포트에서 백엔드 서버를 실행행
 
 app.use(cors());
 app.use(bodyParser.json()); //외부에서 JSON을 받을 수 있게 설정함함
